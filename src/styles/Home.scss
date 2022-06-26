@@ -1,0 +1,27 @@
+@import "./variables";
+
+main {
+  .main-content {
+    display: flex;
+    padding: 70px;
+
+    .main-left {
+      width: 50%;
+
+      .main-left-tile {
+        font-size: 3em;
+        width: 362px;
+      }
+      .main-left-text {
+        font-size: 1em;
+        width: 362px;
+      }
+    }
+    .main-right {
+      width: 719px;
+    }
+  }
+  .main-btn-container {
+    text-align: center;
+  }
+}

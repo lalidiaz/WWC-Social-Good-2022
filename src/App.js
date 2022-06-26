@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { Wrapper, Button } from "./components";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <main>
+        <div className='main-content'>
+          <div className='main-left'>
+            <h1 className='main-left-tile'>Track and Reduce your Carbon Footprint</h1>
+            <p className='main-left-text'>Have you ever wondered how you can make the world a better place? Here’s a reminder that YOU matter and that it’s the small things that count.</p>
+          </div>
+          <div className='main-right'>
+            <img src='/image.svg' alt='recycle' />
+          </div>
+        </div>
+        <div className='main-btn-container'>
+          <Button text='Get Started' />
+        </div>
+      </main>
+    </Wrapper>
   );
 }
 

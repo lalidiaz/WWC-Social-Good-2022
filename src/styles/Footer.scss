@@ -1,0 +1,28 @@
+@import "./variables";
+
+footer {
+  height: auto;
+  width: 100%;
+  background-color: #f3f3f3;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .footer-logo-container {
+    .footer-copyright {
+    }
+  }
+
+  .footer-social-media {
+    display: flex;
+    .footer-social-media-logo {
+      background-color: $light-green;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+    }
+  }
+}
