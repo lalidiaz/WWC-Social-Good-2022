@@ -7,6 +7,7 @@ footer {
   padding: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: $padding;
 
   .footer-logo-container {
     .footer-copyright {
@@ -15,6 +16,8 @@ footer {
 
   .footer-social-media {
     display: flex;
+    justify-content: flex-end;
+
     .footer-social-media-logo {
       background-color: $light-green;
       border-radius: 50%;
@@ -23,6 +26,7 @@ footer {
       display: flex;
       justify-content: center;
       padding: 15px;
+      margin-left: 20px;
     }
   }
 }

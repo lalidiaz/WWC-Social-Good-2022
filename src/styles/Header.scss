@@ -4,7 +4,11 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: $padding;
 
   .right-container {
+    button:nth-child(1) {
+      margin-right: 10px;
+    }
   }
 }
