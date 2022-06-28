@@ -1,0 +1,9 @@
+@import "./variables";
+
+.history-wrapper {
+  border: 2px solid red;
+
+  .history-tabs {
+    font-weight: bold;
+  }
+}
