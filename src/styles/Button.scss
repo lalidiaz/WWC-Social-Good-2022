@@ -8,10 +8,14 @@
   height: 50px;
   width: 130px;
   cursor: pointer;
+  padding: 12px;
+  font-size: 1em;
 }
 
 .btn-white {
   background-color: white;
   color: $gray;
   border: 1px solid $green;
+  padding: 12px;
+  font-size: 1em;
 }

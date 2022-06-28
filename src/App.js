@@ -1,23 +1,15 @@
-import { Wrapper, Button } from "./components";
+import { Routes, Route } from "react-router-dom";
+import { SignIn, Home, DailyTarget, TripDetails, SignUp } from "./components";
 
 function App() {
   return (
-    <Wrapper>
-      <main>
-        <div className='main-content'>
-          <div className='main-left'>
-            <h1 className='main-left-tile'>Track and Reduce your Carbon Footprint</h1>
-            <p className='main-left-text'>Have you ever wondered how you can make the world a better place? Here’s a reminder that YOU matter and that it’s the small things that count.</p>
-          </div>
-          <div className='main-right'>
-            <img src='/image.svg' alt='recycle' />
-          </div>
-        </div>
-        <div className='main-btn-container'>
-          <Button text='Get Started' />
-        </div>
-      </main>
-    </Wrapper>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/sign-in' element={<SignIn />} />
+      <Route path='/sign-in' element={<SignUp />} />
+      <Route path='/daily-target' element={<DailyTarget />} />
+      <Route path='/trip-details' element={<TripDetails />} />
+    </Routes>
   );
 }
 

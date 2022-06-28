@@ -1,27 +1,27 @@
 @import "./variables";
 
-main {
-  .main-content {
+.home {
+  .home-content {
     display: flex;
     padding: 70px;
 
-    .main-left {
+    .home-left {
       width: 50%;
 
-      .main-left-tile {
+      .home-left-tile {
         font-size: 3em;
         width: 362px;
       }
-      .main-left-text {
+      .home-left-text {
         font-size: 1em;
         width: 362px;
       }
     }
-    .main-right {
+    .home-right {
       width: 719px;
     }
   }
-  .main-btn-container {
+  .home-btn-container {
     text-align: center;
     padding-bottom: 60px;
   }
