@@ -1,6 +1,7 @@
 import React from "react";
 import Input from "./Input";
 import { useForm } from "react-hook-form";
+import Wrapper from "./Wrapper";
 
 export default function SignIn() {
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
@@ -8,8 +9,10 @@ export default function SignIn() {
 
 
   return (
+    <Wrapper>
     <div>
-      <h1>Sign in </h1> 
+      
+      <section className = "signin--form">
       <form onSubmit={handleSubmit(onSubmit)}>
       <label>Email</label>
      <input type="email" id="email" {...register("email", { required: true })}/>
@@ -18,8 +21,10 @@ export default function SignIn() {
       
       {errors.email && <span>Please enter a valid email.</span>}
       {errors.password && <span>Please enter your password.</span>}
-      <input type="submit" />
+      <input type="submit" className="btn" value="Sign in"/>
       </form>
+      </section>
     </div>
+    </Wrapper>
   );
 }
