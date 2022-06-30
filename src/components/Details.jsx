@@ -25,7 +25,10 @@ const Details = () => {
         <h4 className={style.mainHeader}>Enter your trip details</h4>
         <h4 className={style.subHeader}>
           In order to slow climate change, your daily maximum amount of CO2
-          target is : 5 t CO2
+          target is :
+        </h4>
+        <h4 className={style.subHeader} style={{ color: "#4DC66F" }}>
+          5 t CO2
         </h4>
       </div>
 
@@ -34,7 +37,7 @@ const Details = () => {
         <Input label="Fuel Type:" type="string" id="fuel" />
         <Input label="Distance in km:" type="number" id="distance" />
         <div className={style.subBtn}>
-          <Button text="Submit" />
+          <Button text="Submit" to="/history" />
         </div>
       </form>
       <Footer />

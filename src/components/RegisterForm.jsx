@@ -23,11 +23,12 @@ const RegisterForm = () => {
 
       <form onSubmit={handleSubmit(onSubmit)}>
         <Input label="Name:" type="string" id="name" />
-        <Input label="Email:" type="email" id="email" />
+        <Input label="Email:" type="string" id="email" />
+
         <Input label="Password:" type="string" id="password" />
         <Input label="Repeat Password:" type="string" id="repeatassword" />
         <div className={style.subBtn}>
-          <Button text="Register" />
+          <Button text="Register" to="/trip-details" />
         </div>
       </form>
       <Footer />

@@ -30,6 +30,12 @@
   margin: 40px 0 40px;
   display: flex;
   justify-content: center;
+
+  a {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
 }
 
 .headings {
