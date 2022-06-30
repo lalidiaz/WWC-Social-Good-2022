@@ -1,18 +1,25 @@
 import React from "react";
+import Input from "./Input";
+import { useForm } from "react-hook-form";
 
 export default function SignIn() {
-  const [data, setData] = React.useState(null);
+  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const onSubmit = data => console.log(data);
 
-  React.useEffect(() => {
-    fetch("/sign-in")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
-  }, []);
 
   return (
     <div>
-      <h1>Sign in </h1>
-      <p>{!data ? "Loading..." : data}</p>
+      <h1>Sign in </h1> 
+      <form onSubmit={handleSubmit(onSubmit)}>
+      <label>Email</label>
+     <input type="email" id="email" {...register("email", { required: true })}/>
+     <label>Password</label>
+     <input type="password" id="password" {...register("password", { required: true })}/>
+      
+      {errors.email && <span>Please enter a valid email.</span>}
+      {errors.password && <span>Please enter your password.</span>}
+      <input type="submit" />
+      </form>
     </div>
   );
 }

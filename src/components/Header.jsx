@@ -11,7 +11,7 @@ export default function Header() {
 
       {location.pathname === "/" ||
         location.pathname === "/sign-in" ||
-        (location.pathname === "/sign-up" ? (
+        location.pathname === "/sign-up" ? (
           <div className='right-container'>
             <Button text='Register' to='/sign-up' />
             <Button text='Login' white to='/sign-in' />
@@ -23,7 +23,7 @@ export default function Header() {
               <Link to='/my-account'>My account</Link>
             </div>
           </div>
-        ))}
+        )}
     </header>
   );
 }
