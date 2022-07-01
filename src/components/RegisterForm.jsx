@@ -5,6 +5,7 @@ import Input from "../components/Input";
 import Button from "./Button";
 import "../styles/Form.scss";
 import style from "../styles/Details.module.scss";
+import Wrapper from "./Wrapper";
 
 const RegisterForm = () => {
   const {
@@ -17,9 +18,7 @@ const RegisterForm = () => {
   };
   return (
     <>
-      <header className="header">
-        <img src="/logo.svg" alt="logo" className="logo" />
-      </header>
+   <Wrapper>
 
       <form onSubmit={handleSubmit(onSubmit)}>
         <Input label="Name:" type="string" id="name" />
@@ -31,7 +30,7 @@ const RegisterForm = () => {
           <Button text="Register" to="/trip-details" />
         </div>
       </form>
-      <Footer />
+      </Wrapper>
     </>
   );
 };

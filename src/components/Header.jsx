@@ -7,7 +7,7 @@ export default function Header() {
 
   return (
     <header className='header'>
-      <img src='/logo.svg' alt='logo' className='logo' />
+     <Link to='/'><img src='/logo.svg' alt='logo' className='logo' /></Link> 
 
       {location.pathname === "/" 
         /* ||location.pathname === "/sign-in" ||
