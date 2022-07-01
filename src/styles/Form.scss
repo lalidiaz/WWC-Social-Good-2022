@@ -20,11 +20,6 @@ h1 {
   margin: 0 auto;
 }
 
-p::before {
-  display: inline;
-  content: "⚠️ ";
-}
-
 textarea,
 input {
   display: block;
