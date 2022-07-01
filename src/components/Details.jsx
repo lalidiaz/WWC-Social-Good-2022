@@ -6,6 +6,7 @@ import Input from "./Input";
 import "../styles/Form.scss";
 import style from "../styles/Details.module.scss";
 
+
 const Details = () => {
   const {
     handleSubmit,
@@ -33,8 +34,24 @@ const Details = () => {
       </div>
 
       <form onSubmit={handleSubmit(onSubmit)}>
-        <Input label="Car Size:" type="number" id="size" />
-        <Input label="Fuel Type:" type="string" id="fuel" />
+    <label>Car Size: </label>
+    <select id="size">
+    <option value="Small">Small</option>
+    <option value="Medium">Medium</option>
+    <option value="Large">Large</option>
+    </select>
+
+    <label>Fuel Type:</label>
+    <select id="fuel">
+    <option value="Petrol">Petrol</option>
+    <option value="Diesel">Diesel</option>
+    <option value="Hybrid">Hybrid</option>
+    <option value="LPG">LPG</option>
+    <option value="CNG">CNG</option>
+    </select>
+
+
+
         <Input label="Distance in km:" type="number" id="distance" />
         <div className={style.subBtn}>
           <Button text="Submit" to="/history" />
