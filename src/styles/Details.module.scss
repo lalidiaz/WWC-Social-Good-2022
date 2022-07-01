@@ -1,0 +1,43 @@
+.mainHeader {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.subHeader {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.subBtn {
+  margin: 40px 0 40px;
+  display: flex;
+  justify-content: center;
+
+  a {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
+
+.headings {
+  margin-top: -40px;
+}

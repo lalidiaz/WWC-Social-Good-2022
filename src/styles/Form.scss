@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
+
+body {
+  font-family: "Helvetica Neue", "Roboto", sans-serif;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: bold;
+  color: #26185f;
+  padding: 10px 0;
+}
+
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+p::before {
+  display: inline;
+  content: "⚠️ ";
+}
+
+textarea,
+input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 8px;
+  border: 3px solid rgba(0, 0, 0, 0.048);
+  padding: 15px;
+  font-size: 16px;
+  background: #ececec;
+}
+
+label {
+  line-height: 2;
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  color: #5a5566f5;
+  font-size: 16px;
+  font-weight: 500;
+}

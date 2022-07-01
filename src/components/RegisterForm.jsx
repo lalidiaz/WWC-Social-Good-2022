@@ -1,12 +1,12 @@
 import React from "react";
-import { useForm } from "react-hook-form";
-import Button from "./Button";
 import Footer from "./Footer";
-import Input from "./Input";
+import { useForm } from "react-hook-form";
+import Input from "../components/Input";
+import Button from "./Button";
 import "../styles/Form.scss";
 import style from "../styles/Details.module.scss";
 
-const SignIn = () => {
+const RegisterForm = () => {
   const {
     handleSubmit,
     formState: { errors },
@@ -22,10 +22,13 @@ const SignIn = () => {
       </header>
 
       <form onSubmit={handleSubmit(onSubmit)}>
+        <Input label="Name:" type="string" id="name" />
         <Input label="Email:" type="string" id="email" />
+
         <Input label="Password:" type="string" id="password" />
+        <Input label="Repeat Password:" type="string" id="repeatassword" />
         <div className={style.subBtn}>
-          <Button text="Sign In" to="/trip-details" />
+          <Button text="Register" to="/trip-details" />
         </div>
       </form>
       <Footer />
@@ -33,4 +36,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default RegisterForm;
