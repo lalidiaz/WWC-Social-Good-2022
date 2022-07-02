@@ -21,7 +21,7 @@ const SignIn = () => {
     <Wrapper>
       <form onSubmit={handleSubmit(onSubmit)}>
         <Input label="Email:" type="string" id="email" />
-        <Input label="Password:" type="string" id="password" />
+        <Input label="Password:" type="password" id="password" />
         <div className={style.subBtn}>
           <Button text="Sign In" to="/trip-details" />
         </div>

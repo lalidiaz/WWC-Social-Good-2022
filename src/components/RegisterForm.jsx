@@ -24,8 +24,8 @@ const RegisterForm = () => {
         <Input label="Name:" type="string" id="name" />
         <Input label="Email:" type="string" id="email" />
 
-        <Input label="Password:" type="string" id="password" />
-        <Input label="Repeat Password:" type="string" id="repeatassword" />
+        <Input label="Password:" type="password" id="password" />
+        <Input label="Repeat Password:" type="password" id="repeatassword" />
         <div className={style.subBtn}>
           <Button text="Register" to="/trip-details" />
         </div>
